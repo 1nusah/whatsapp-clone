@@ -1,8 +1,13 @@
+import Chat from './components/Chat/Chat';
+import SideBar from './components/SideBar/SideBar';
+import './App.css';
 function App() {
 	return (
-		<div>
-			<h1>Pussy can't be your only hustle</h1>
-			<h1>unless you bad as Naomi Russel</h1>
+		<div className="app">
+			<div className="app_body">
+				<SideBar />
+				<Chat />
+			</div>
 		</div>
 	);
 }
