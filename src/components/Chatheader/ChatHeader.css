@@ -1,0 +1,18 @@
+.chatHeader {
+	display: flex;
+	align-items: center;
+}
+.chatHeader_details > p {
+	color: gray;
+}
+.chatHeader_details {
+	padding: 10px;
+	cursor: pointer;
+}
+.chat_buttons {
+	display: flex;
+	justify-content: space-around;
+	min-width: 10vw;
+	align-items: center;
+	padding-left: 60%;
+}

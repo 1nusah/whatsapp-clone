@@ -3,3 +3,50 @@
 	flex: 0.7;
 	flex-direction: column;
 }
+.chat_header {
+	padding: 20px;
+	padding-top: 17px;
+}
+.chatMessages {
+	background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+	height: 65vh;
+	background-repeat: repeat;
+	background-position: center;
+	padding: 30px;
+	overflow-y: scroll;
+}
+.chat_body {
+	position: relative;
+	font-size: 16px;
+	padding: 10px;
+	width: fit-content;
+	background-color: white;
+	margin-bottom: 10px;
+	border-radius: 10%;
+}
+.chat_message {
+	display: flex;
+	align-items: center;
+}
+.chat_timestamp {
+	font-size: xx-small;
+	margin-left: 10px;
+	bottom: 0;
+	display: flex;
+}
+.chat_received {
+	background-color: #dcf8c6;
+	margin-left: auto;
+}
+.chat_bottom {
+	background-color: white;
+	display: flex;
+	align-items: center;
+}
+.chat_bottom > input {
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 700px;
+	border: none;
+	outline-width: 0;
+}

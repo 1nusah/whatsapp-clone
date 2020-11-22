@@ -1,8 +1,17 @@
 import React from 'react';
+import ChatHeader from '../Chatheader/ChatHeader';
 import './Chat.css';
+import ChatBottom from './ChatBottom';
+import ChatMessages from './ChatMessages';
 const Chat = () => (
 	<div className="chat">
-		<h1>Hey there, This is the chat component</h1>
+		<div className="chat_header">
+			<ChatHeader />
+		</div>
+		<div>
+			<ChatMessages />
+			<ChatBottom />
+		</div>
 	</div>
 );
 
