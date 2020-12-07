@@ -14,7 +14,7 @@ const ChatBottom = () => {
 			<IconButton>
 				<EmojiEmotionsIcon style={{ fontSize: 30 }} />
 			</IconButton>
-			<input placeholder="Type a message" autofocus onChange={handleChange} />
+			<input placeholder="Type a message" autoFocus onChange={handleChange} />
 
 			{textMessage?.length === 0 ? (
 				<IconButton>

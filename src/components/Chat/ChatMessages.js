@@ -1,52 +1,21 @@
 import React from 'react';
 import './Chat.css';
-const ChatMessages = () => {
+const ChatMessages = ({ messages }) => {
+	console.log(messages);
 	return (
 		<div className="chatMessages">
 			<div className="chat_body">
-				<p className="chat_message">
-					<span className="chat_name"></span>
-					This is a message
-					<span className="chat_timestamp">
-						{new Date().getHours()} : {new Date().getMinutes()}
-					</span>
-				</p>
-			</div>{' '}
-			<div className="chat_body">
-				<p className="chat_message">
-					<span className="chat_name"></span>
-					This is a message
-					<span className="chat_timestamp">
-						{new Date().getHours()} : {new Date().getMinutes()}
-					</span>
-				</p>
-			</div>{' '}
-			<div className="chat_body">
-				<p className="chat_message">
-					<span className="chat_name"></span>
-					This is a message
-					<span className="chat_timestamp">
-						{new Date().getHours()} : {new Date().getMinutes()}
-					</span>
-				</p>
-			</div>
-			<div className="chat_body chat_received">
-				<p className="chat_message ">
-					<span className="chat_name"></span>
-					This is a message
-					<span className="chat_timestamp">
-						{new Date().getHours()} : {new Date().getMinutes()}
-					</span>
-				</p>
-			</div>{' '}
-			<div className="chat_body chat_received">
-				<p className="chat_message ">
-					<span className="chat_name"></span>
-					This is a message
-					<span className="chat_timestamp">
-						{new Date().getHours()} : {new Date().getMinutes()}
-					</span>
-				</p>
+				{messages?.map((message) => (
+					<p
+						className={`chat_message ${message.received && 'chat_received'} `}
+						key={message.id}
+					>
+						<span className="chat_name">{message.name}</span>
+						<br />
+						<p>{message.message}</p>
+						<span className="chat_timestamp">{message.timeStamp}</span>
+					</p>
+				))}
 			</div>
 		</div>
 	);
