@@ -7,10 +7,7 @@
 	padding: 20px;
 	border-bottom: 1px solid lightgray;
 }
-/* .chat_headerInfo {
-	padding-left: 20px;
-	flex: 1;
-} */
+
 .chatMessages {
 	background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
 	height: 65vh;
@@ -18,6 +15,11 @@
 	background-position: center;
 	padding: 30px;
 	overflow-y: scroll;
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.chat_body {
 }
 .chat_message {
 	position: relative;
