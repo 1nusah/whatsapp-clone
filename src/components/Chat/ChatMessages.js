@@ -13,7 +13,8 @@ const ChatMessages = ({ messages }) => {
 						<span className="chat_name">{message.name}</span>
 						<br />
 						<p>{message.message}</p>
-						<span className="chat_timestamp">{message.timeStamp}</span>
+						<span className="chat_timestamp">{message.timestamp}</span>
+						{console.log(message.timestamp)}
 					</p>
 				))}
 			</div>
